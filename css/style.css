@@ -1,0 +1,525 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.atas{
+background-image: url(../gambar/backgraund2.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+background-size: cover;
+width: 100%;
+height: 100vh;
+position: relative;
+background-position-y: -60px;
+z-index: 9;
+}
+
+.logo img{
+    padding: -30px 10px 0px 0;
+
+}
+
+.atas::after{
+    display: block;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(1, 48, 13,.5);
+    position: absolute;
+    }
+    
+
+.atas .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: fixed;
+}
+
+.nav{
+    width: 100%;
+    background-color: #046e20;
+    position: relative;
+    z-index: 99999;
+    height: 50px;
+}
+
+.nav .container{
+    width: 80%;
+    margin: 0 auto;
+    line-height: 65px;
+    text-align: center;
+}
+
+
+.nav .container ul li{
+display: inline;
+margin-right: 20px;
+list-style: none;
+}
+
+.nav .container ul li a{
+    text-decoration: none;
+    z-index: 99999;
+}
+
+.subnav{
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    z-index: 999999;
+    transition: 0.1s ease all ;
+}
+
+.subnav .container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.subnav h1{
+    float: left;
+    color: #046e20;
+    letter-spacing: 2px;
+    font-family: 'Zen Antique', serif;
+}
+
+.subnav ul{
+    float: right;
+    line-height: 50px;
+}
+.subnav .container ul li{
+    display: inline;
+    margin-right: 20px;
+    list-style: none;
+}
+
+.subnav .container ul li a{
+    text-decoration: none;
+    color: #046e20;
+    padding: 18px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-weight: 700;
+    transition: 0.8s ease all;
+}
+
+.subnav .container ul li a:hover{
+    background-color: #046e20;
+    color: #fff;
+    font-weight: bold;
+}
+
+.text{
+    position: relative;
+    z-index: 9999;
+    color: #fff;
+    padding: 10px;
+    transition: 0.2s ease all;
+}
+
+.text strong{
+    font-size:2.3em;
+    letter-spacing: 2px;
+    font-family: 'Zen Antique', serif;
+    text-align: center;
+}
+
+.text p {
+    font-size: 1.2em;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-weight: 500;
+}
+
+.text a{
+    display: inline-block;
+    background-color: blue;
+    padding: 3px 30px;
+    text-decoration: none;
+    color: #fff;
+    margin: 10px 20px;
+    border-radius: 20px;
+    transition: 0.6s ease all;
+    text-transform: uppercase;
+    font-family: 'Zen Antique', serif;
+}
+.text a:hover{
+    background-color:#046e20 ;
+    color: #fff;
+}
+
+.load{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #eee;
+    z-index: 999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.load .loader{
+    height: 100px;
+    width: 100px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    border-top-color: #046e20;
+    border-right-color: #046e20 ;
+    border-bottom-color: #046e20 ;
+    animation: muter 0.5s linear infinite;
+}
+
+.about{
+    padding: 80px;
+}
+
+
+.judul h3{
+    padding: 40px 0 30px 0;
+}
+.judul h3{
+    
+    color: #046e20;
+    font-family: 'Zen Antique', serif;
+    font-size: 2em;
+    
+}
+
+
+
+
+
+
+
+
+
+
+.java{
+    background-color: #e3dada;
+    transition: 0.5s ease all;
+    box-shadow: 2px 4px 5px rgba(0,0,0,0.4);
+}
+
+
+
+/* galery */
+
+.galeri{
+    width: 100%;
+    background-color: #e3dada ;
+    padding: 60px;
+    height: 100vh;
+}
+
+.judul h3{
+    padding: 10px
+}
+.judul h3{
+    color: #046e20;
+    font-family: 'Zen Antique', serif;
+    font-size: 2em;
+}
+    
+.galeri .image{
+    width: 40rem;
+    display: flex;
+    overflow: hidden;
+
+}
+
+.galeri .image img{
+    width: 40rem;
+    transition: 0.5s ease all;
+}
+
+.cs1:checked ~ .image > .gmbr1{
+    margin-left: -0rem;
+}
+
+.cs2:checked ~ .image > .gmbr1{
+    margin-left: -40rem;
+}
+
+.cs3:checked ~ .image > .gmbr1{
+    margin-left: -80rem;
+
+}
+.cs4:checked ~ .image > .gmbr1{
+    margin-left: -120rem;
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+.service{
+    padding: 50px;
+    height: 100vh;
+}
+
+.service .container{
+    width: 80%;
+    margin: 0 auto;
+    margin: 50px;
+}
+
+.service .container h3{
+    color: #046e20;
+    font-family: 'Zen Antique', serif;
+    font-size: 2em;
+    padding: 20px;
+}
+
+.box-4{
+    width: 30%;
+    display: inline-block;
+    margin:40px 0; 
+}
+
+.box-4 p {
+    font-family: 'Zen Antique', serif;
+    letter-spacing: 2px;
+    margin-top: 15px;
+
+}
+.img{
+    width: 50%;
+}
+
+.fa-parking,
+.fa-utensils,
+.fa-toilet,
+.fa-bed,
+.fa-hotel,
+.fa-ship
+{
+    font-size: 3em;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.komentar{
+    padding: 0 0 70px 0;
+}
+
+.komentar h3{
+    padding: 10px 0 20px 0;
+}
+.komentar h3{
+    color: #046e20;
+    font-family: 'Zen Antique', serif;
+    font-size: 2em;
+}
+
+label{
+    display: block;
+    margin: 10px;
+    font-family: 'Zen Antique', serif;
+}
+input[type="email"],
+input[type="username"]{
+    width: 40%;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    border: 1px solid rgba(27, 54, 52,.30);
+    transition: 0.5s ease all;
+}
+
+input[type="email"]:hover{
+    box-shadow: 2px 4px 5px rgba(0,0,0,0.4);
+}
+input[type="username"]:hover{
+    box-shadow: 2px 4px 5px rgba(0,0,0,0.4);  
+}
+textarea[name="textarea"]:hover{
+    box-shadow: 2px 4px 5px rgba(0,0,0,0.4);
+}
+
+
+textarea[name="textarea"]{
+    width: 40%;
+    padding: 10px;
+    height: 140px;
+    outline: none;
+    border: none;
+    border: 1px solid rgba(27, 54, 52,.30);
+    transition: 0.5s ease all;
+}
+
+
+.submit{
+    margin-top: 20px;
+}
+.submit a{
+background-color: #01662e;
+border-radius: 20px;
+color: #fff;
+font-family: 'Zen Antique', serif;
+text-decoration: none;
+padding: 5px 30px;
+font-weight: 400;
+transition: 0.5s ease all;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+
+.submit a:hover{
+    background-color: #ad2705;
+}
+
+.footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot p{
+color: #5c403e;
+font-family: 'Zen Antique', serif;
+}
+
+.foot {
+  position: absolute;
+   bottom: 0;
+   padding: 30px;
+   
+}
+
+
+.scrol{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    margin: 0 50px 30px 0;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.sub{
+    position: relative;
+    position: fixed;
+    z-index: 99999;
+}
+
+.fa-arrow-up{
+    font-size: 1.5em;
+    color: #fff;
+    background-color: #435448;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
+.fa-facebook,
+.fa-whatsapp,
+.fa-instagram{
+    font-size: 1em;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.fa-whatsapp{
+color: #03591a;
+}
+
+.fa-instagram{
+color: #e33e19;
+}
+
+
+
+@keyframes muter{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.about{
+    padding: 80px;
+}
+
+
+.judul h3{
+    padding: 40px 0 30px 0;
+}
+.judul h3{
+    
+    color: #046e20;
+    font-family: 'Zen Antique', serif;
+    font-size: 2em;
+    
+}
+
+.about .container{
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+  
+}
+
+.box-2{
+    width: 100%;
+    display: flex;
+    height: 30vh;
+}
+
+.gambar{
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+}
+
+.gambar img{
+    width: 150px;
+   height: 150px;
+   border-radius: 50%;
+    box-shadow: -2px -4px 7px rgba(0,0,0,0.4);
+}
+
+.box-2 .tulisan{
+width: 50%;
+padding: 10px;
+overflow: hidden;
+text-align: justify;
+font-size: 0.9em;
+font-family: 'Zen Antique', serif;
+}
+
+.box-2 .tulisan .cesss{
+    margin: 10px 0;
+}
+
+.box-2 .tulisan .cesss a{
+    text-decoration: none;
+    background-color:blue;
+    padding: 5px 25px;
+    border-radius: 20px;
+    color: #fff;
+    transition: 0.5s ease all;
+}
+
+.box-2 .tulisan .cesss a:hover{
+    background-color: red;
+}
+
+
+
+
